@@ -16,5 +16,5 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('users', 'UserController@getIndex');
+Route::get('login', 'AuthController@login');
 Route::resource('nerds', 'NerdController');
